@@ -1,10 +1,8 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "zh-CN" }}">
+<html lang='{{ site.lang | default: "zh-CN" }}'>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-{% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
@@ -34,14 +32,15 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+          <span class="credits left">站长：ouyhq2011</span>
+          <span class="credits right">网站托管在<a href="https://github.com">Github</a>下的Pages服务内 使用Jekyll作为博客引擎 &mdash; 此页面主题由大佬 <a href="https://twitter.com/mattgraham">mattgraham</a> 编写 当前使用的主题为站长本人修改的版本</span>
         </div>
 
         {{ content }}
 
       </section>
-
     </div>
+    
+    
   </body>
 </html>
